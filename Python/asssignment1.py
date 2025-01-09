@@ -15,5 +15,6 @@ updated_entity = {
         "createdDate":"2022.02.24"
 }
 
-response = requests.put(f"{url}/api/products/")
+response = requests.put(f"{url}/api/products", json=updated_entity)
+
 print(response.json())
